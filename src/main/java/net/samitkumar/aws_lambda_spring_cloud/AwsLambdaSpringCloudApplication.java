@@ -1,5 +1,6 @@
 package net.samitkumar.aws_lambda_spring_cloud;
 
+import com.amazonaws.services.lambda.runtime.events.SQSEvent;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -16,6 +17,11 @@ public class AwsLambdaSpringCloudApplication {
 	@Bean
 	public Function<String, String> uppercase() {
 		return value -> value.toUpperCase();
+	}
+
+	@Bean
+	public Function<String, String> lowercase() {
+		return value -> value.toLowerCase();
 	}
 
 }

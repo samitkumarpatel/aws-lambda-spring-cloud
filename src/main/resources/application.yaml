@@ -1,3 +1,7 @@
 spring:
   application:
     name: aws-lambda-spring-cloud
+  cloud:
+    function:
+      definition: functionRouter
+      routing-expression: headers['spring.cloud.function.definition']
