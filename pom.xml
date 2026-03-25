@@ -40,6 +40,12 @@
 			<artifactId>spring-cloud-function-context</artifactId>
 		</dependency>
 		<dependency>
+			<groupId>com.amazonaws.serverless</groupId>
+			<artifactId>aws-serverless-java-container-springboot4</artifactId>
+			<version>3.0.1</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
