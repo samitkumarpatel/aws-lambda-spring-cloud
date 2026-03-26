@@ -6,6 +6,6 @@
 ### Web based spring cloud on aws lambda
 [Documentation to be followed](https://docs.spring.io/spring-cloud-function/reference/adapters/aws-intro.html#serverless-java-container).
 
-- Deploy the generate jar during `./mvnw clean install`
-- After Deploy make sure to change the handler to `com.amazonaws.serverless.proxy.spring.SpringDelegatingLambdaContainerHandler`
-- Pass a Env variable `MAIN_CLASS=net.samitkumar.aws_lambda_spring_cloud.AwsLambdaSpringCloudApplication`
+- Deploy the generate zip during `./mvnw package -Pnative`
+- Test the application in test tab in the function.
+
