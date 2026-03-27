@@ -1,3 +1,7 @@
 spring:
   application:
     name: aws-lambda-spring-cloud
+  datasource:
+    username: ${DB_USERNAME:user}
+    password: ${DB_PASSWORD:secret}
+    url: ${DB_URI:jdbc:postgresql://localhost:5432/hr-management}
