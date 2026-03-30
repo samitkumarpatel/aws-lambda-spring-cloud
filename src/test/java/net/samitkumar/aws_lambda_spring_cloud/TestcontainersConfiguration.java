@@ -12,7 +12,8 @@ class TestcontainersConfiguration {
     @Bean
     @ServiceConnection
     PostgreSQLContainer postgresContainer() {
-        return new PostgreSQLContainer(DockerImageName.parse("postgres:17-alpine"));
+        return new PostgreSQLContainer(DockerImageName.parse("postgres:17-alpine"))
+                .withInitScript("db/migration/V1__schema.sql");
     }
 
 }

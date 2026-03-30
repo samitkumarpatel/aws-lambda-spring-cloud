@@ -5,3 +5,8 @@ spring:
     username: ${DB_USERNAME:user}
     password: ${DB_PASSWORD:secret}
     url: ${DB_URI:jdbc:postgresql://localhost:5432/hr-management}
+  flyway:
+    url: ${spring.datasource.url}
+    user: ${spring.datasource.username}
+    password: ${spring.datasource.password}
+    enabled: ${FLYWAY_ENABLE:false}

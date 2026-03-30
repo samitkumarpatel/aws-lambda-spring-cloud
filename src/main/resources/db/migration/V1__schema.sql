@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS "user"
+(
+    id   BIGSERIAL    PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    age  INTEGER      NOT NULL
+);
+
